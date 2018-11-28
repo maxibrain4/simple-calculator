@@ -14,6 +14,7 @@
     	height:50px;
     	padding:3px;
     	font-size:40px;
+    	border-radius:10px;
     }
 	#btn{
 		width:40px;
@@ -47,7 +48,7 @@
 		<button type="button"  id="btn" onclick="form.screen.value += '8'">8</button><br>
 		<button type="button"  id="btn" onclick="form.screen.value += '9'">9</button>
 		<button type="button"  id="btn" onclick="form.screen.value += '0'">0</button>
-		<button type="button"  id="btn" onclick="form.screen.value += '←'">←</button>
+		<button type="button"  id="btn" onclick="form.screen.value = form.screen.value.slice(0,-1)">←</button>
 		<button type="button"  id="btn" onclick="form.screen.value += '+'">+</button><br>
 		<button type="button"  id="btn" onclick="form.screen.value += '-'">-</button>
 		<button type="button"  id="btn" onclick="form.screen.value += '*'">*</button>
