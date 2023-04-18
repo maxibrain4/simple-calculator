@@ -4,78 +4,43 @@
     <title>simple calculate</title>
     <link rel="stylesheet" href="index.css" />
     <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <form name="form">
-      <div class="one">
-        <input type="text" id="men" name="screen" /><br /><br />
-        <button type="button" id="btn" onclick="form.screen.value += '1'">
-          1
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '2'">
-          2
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '3'">
-          3
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '4'">
-          4</button
-        ><br />
-        <button type="button" id="btn" onclick="form.screen.value += '5'">
-          5
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '6'">
-          6
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '7'">
-          7
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '8'">
-          8</button
-        ><br />
-        <button type="button" id="btn" onclick="form.screen.value += '9'">
-          9
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '0'">
-          0
-        </button>
-        <button
-          type="button"
-          id="btn"
-          onclick="form.screen.value = form.screen.value.slice(0,-1)"
-        >
-          ←
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '+'">
-          +</button
-        ><br />
-        <button type="button" id="btn" onclick="form.screen.value += '-'">
-          -
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '*'">
-          *
-        </button>
-        <button type="button" id="btn" onclick="form.screen.value += '/'">
-          /
-        </button>
-        <button
-          type="button"
-          id="btn"
-          onclick="form.screen.value = Math.sqrt(form.screen.value)"
-        >
-          √
-        </button>
-        <button
-          type="button"
-          id="btn"
-          onclick="form.screen.value = eval(form.screen.value)"
-        >
-          =
-        </button>
-        <button type="button" id="clear" onclick="form.screen.value = '' ">
-          Clear All
-        </button>
+    <div class="container">
+      <div class="card">
+        <div class="description">
+          <p>calc</p>
+        </div>
+        <div class="input-screen-body">
+          <input type="text" class="screen" />
+        </div>
+        <div class="btn-body">
+          <div class="btn-box"><button class="btn">7</button></div>
+          <div class="btn-box"><button class="btn">8</button></div>
+          <div class="btn-box"><button class="btn">9</button></div>
+          <div class="btn-box"><button class="btn">DEL</button></div>
+          <div class="btn-box"><button class="btn">4</button></div>
+          <div class="btn-box"><button class="btn">5</button></div>
+          <div class="btn-box"><button class="btn">6</button></div>
+          <div class="btn-box"><button class="btn">+</button></div>
+          <div class="btn-box"><button class="btn">1</button></div>
+          <div class="btn-box"><button class="btn">2</button></div>
+          <div class="btn-box"><button class="btn">3</button></div>
+          <div class="btn-box"><button class="btn">-</button></div>
+          <div class="btn-box"><button class="btn">.</button></div>
+          <div class="btn-box"><button class="btn">0</button></div>
+          <div class="btn-box"><button class="btn">/</button></div>
+          <div class="btn-box"><button class="btn">X</button></div>
+          <div class="btn-box btn-big"><button class="btn">RESET</button></div>
+          <div class="btn-box btn-big2"><button class="btn">=</button></div>
+        </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>
