@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>simple calculate</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="query.css" />
-    <script defer src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="query.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
-    <form action="">
-      <div class="container">
-        <div class="card">
-          <div class="description">
-            <div><p class="text-desc">calc</p></div>
-            <div class="toggle-div">
-              <div class="numberDiv">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-              </div>
-              <div class="switch-toggle switch-3 switch-candy">
-                <input id="on" name="state-d" type="radio" checked="" />
-                <label for="on" onclick=""></label>
+    <div class="container">
+      <div class="card">
+        <div class="description">
+          <div><p class="text-desc">calc</p></div>
+          <div class="toggle-div">
+            <div class="numberDiv">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div class="switch-toggle switch-3 switch-candy">
+              <input id="on" name="state-d" type="radio" checked="" />
+              <label for="on" onclick=""></label>
 
-                <input id="off" name="state-d" type="radio" />
-                <label for="off" onclick=""></label>
+              <input id="off" name="state-d" type="radio" />
+              <label for="off" onclick=""></label>
 
-                <input id="na" name="state-d" type="radio" checked="checked" />
-                <label for="na" class="disabled" onclick=""></label>
-              </div>
+              <input id="na" name="state-d" type="radio" checked="checked" />
+              <label for="na" class="disabled" onclick=""></label>
             </div>
-          </div>
-
-          <div class="input-screen-body">
-            <input type="text" class="screen" readonly />
-          </div>
-          <div class="btn-body">
-            <div class="btn-box">
-              <button class="btn" data-num="7">7</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="8">8</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="9">9</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn">DEL</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="4">4</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="5">5</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="6">6</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="+">+</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="1">1</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="2">2</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="3">3</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="-">-</button>
-            </div>
-            <div class="btn-box"><button class="btn">.</button></div>
-            <div class="btn-box">
-              <button class="btn" data-num="0">0</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="-">/</button>
-            </div>
-            <div class="btn-box">
-              <button class="btn" data-num="x">x</button>
-            </div>
-            <div class="btn-box btn-big">
-              <button class="btn">RESET</button>
-            </div>
-            <div class="btn-box btn-big2"><button class="btn">=</button></div>
           </div>
         </div>
+        <div class="input-screen-body">
+          <input type="text" class="screen" readonly />
+        </div>
+        <div class="btn-body">
+          <div class="btn-box">
+            <button class="btn" data-num="7">7</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="8">8</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="9">9</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn">DEL</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="4">4</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="5">5</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="6">6</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="+">+</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="1">1</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="2">2</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="3">3</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="-">-</button>
+          </div>
+          <div class="btn-box"><button class="btn">.</button></div>
+          <div class="btn-box">
+            <button class="btn" data-num="0">0</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="-">/</button>
+          </div>
+          <div class="btn-box">
+            <button class="btn" data-num="x">x</button>
+          </div>
+          <div class="btn-box btn-big">
+            <button class="btn">RESET</button>
+          </div>
+          <div class="btn-box btn-big2"><button class="btn">=</button></div>
+        </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>
