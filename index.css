@@ -45,6 +45,17 @@
   font-weight: 700;
   font-size: 20px;
   border: none;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(221, 14%, 31%);
+}
+#del-btn,
+#reset-btn {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+}
+#equals-btn {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
 }
 .btn-big {
   grid-column: 1/3;
@@ -63,6 +74,7 @@
   font-weight: 700;
   box-sizing: border-box;
   background-color: hsl(224, 36%, 15%);
+  color: hsl(0, 0%, 100%);
   outline: none;
   border: none;
   border-radius: 7px;
@@ -72,6 +84,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 /* toggle */
@@ -93,7 +106,7 @@
   cursor: pointer;
 }
 .switch-toggle input:checked + label {
-  background: red;
+  background-color: hsl(6, 63%, 50%);
   border-radius: 50%;
 }
 
