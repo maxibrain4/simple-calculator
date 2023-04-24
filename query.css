@@ -1,11 +1,39 @@
 @media (max-width: 600px) {
   .container {
     width: 100%;
+    overflow-x: hidden;
     display: block;
   }
+
   .card {
     width: 100%;
     max-width: 100%;
+    position: fixed;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+  }
+  .btn-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .btn {
+    width: 100%;
+    padding: 28px 0;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .screen {
+    font-size: 50px;
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .description {
+    margin-bottom: 50x;
+    /* margin-top: 10px; */
   }
 }
