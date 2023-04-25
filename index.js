@@ -10,10 +10,11 @@ let screen = document.querySelector('.screen');
 const container = document.querySelector('.container');
 const btnBody = document.querySelector('.btn-body');
 const switchToggle = document.querySelector('.switch-toggle');
-
 const description = document.querySelector('.description ');
 let screenValue = '';
 // new Intl.NumberFormat(navigator.language).format(screen.value);
+
+//All btn normal clicks except for equal, delete, and reset
 allBtn.forEach(function (el) {
   el.addEventListener('click', function () {
     const id = this.getAttribute('data-num');
@@ -37,6 +38,8 @@ reset.addEventListener('click', function () {
   screen.value = '';
   screenValue = '';
 });
+
+//Toggle one
 switchOne.addEventListener('click', function () {
   container.style.backgroundColor = '';
   btnBody.style.backgroundColor = '';
@@ -49,11 +52,11 @@ switchOne.addEventListener('click', function () {
   del.style.boxShadow = '';
   reset.style.boxShadow = '';
   equals.style.boxShadow = '';
-  // allBtn.style.color = '';
+  equals.style.color = '';
   switchToggle.style.backgroundColor = '';
-
   document.querySelector('.btnx').style.backgroundColor = '';
 });
+//Toggle two
 switchTwo.addEventListener('click', function (e) {
   container.style.backgroundColor = 'hsl(0, 0%, 90%)';
   btnBody.style.backgroundColor = 'hsl(0, 5%, 81%)';
@@ -64,6 +67,7 @@ switchTwo.addEventListener('click', function (e) {
   reset.style.backgroundColor = 'hsl(185, 42%, 37%)';
   reset.style.boxShadow = 'hsl(185, 58%, 25%) 0px 4px 0px 0px';
   equals.style.backgroundColor = 'hsl(25, 98%, 40%)';
+  equals.style.color = 'hsl(0, 0%, 100%)';
   equals.style.boxShadow = 'hsl(25, 99%, 27%) 0px 4px 0px 0px';
   description.style.color = 'hsl(60, 10%, 19%)';
   allBtn.forEach(function (el) {
@@ -71,16 +75,12 @@ switchTwo.addEventListener('click', function (e) {
     el.style.color = 'hsl(60, 10%, 19%)';
     el.style.boxShadow = 'hsl(28, 16%, 65%) 0px 4px 0px 0px';
   });
-  // switchtoggle.backgroundColor = 'green';
-  // e.target.firstChild.add('btnColor');
-  // btn.style.backgroundColor = 'green';
   switchToggle.style.backgroundColor = 'hsl(0, 5%, 81%)';
-  // let one = e.currentTarget;
-  // console.log(one);
-  // one.style.backgroundColor = 'hsl(0, 5%, 81%)';
   document.querySelector('.click').style.backgroundColor = '';
   document.querySelector('.btnx').style.backgroundColor = 'hsl(25, 98%, 40%)';
 });
+
+//Toggle two
 switchThree.addEventListener('click', function () {
   container.style.backgroundColor = 'hsl(268, 75%, 9%)';
   btnBody.style.backgroundColor = 'hsl(268, 71%, 12%)';
@@ -89,6 +89,7 @@ switchThree.addEventListener('click', function () {
   del.style.backgroundColor = 'hsl(281, 89%, 26%)';
   reset.style.backgroundColor = 'hsl(281, 89%, 26%)';
   equals.style.backgroundColor = 'hsl(176, 100%, 44%)';
+  equals.style.color = 'hsl(198, 20%, 13%)';
   del.style.boxShadow = 'hsl(285, 91%, 52%) 0px 4px 0px 0px';
   reset.style.boxShadow = 'hsl(285, 91%, 52%) 0px 4px 0px 0px';
   equals.style.boxShadow = 'hsl(177, 92%, 70%) 0px 4px 0px 0px';
