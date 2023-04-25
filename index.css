@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 400px;
   font-family: 'League Spartan', sans-serif;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .btn-body {
   display: grid;
@@ -40,15 +40,18 @@
   border: none;
   background-color: hsl(0, 0%, 100%);
   color: hsl(221, 14%, 31%);
+  box-shadow: hsl(28, 16%, 65%) 0px 4px 0px 0px;
 }
 #del-btn,
 #reset-btn {
   background-color: hsl(225, 21%, 49%);
   color: hsl(0, 0%, 100%);
+  box-shadow: hsl(224, 28%, 35%) 0px 4px 0px 0px;
 }
 #equals-btn {
   background-color: hsl(6, 63%, 50%);
   color: hsl(0, 0%, 100%);
+  box-shadow: hsl(6, 70%, 34%) 0px 4px 0px 0px;
 }
 .toggle-side {
   display: flex;
@@ -95,7 +98,7 @@
 /* toggle */
 .switch-toggle {
   float: left;
-  background: black;
+  background-color: hsl(223, 31%, 20%);
   border-radius: 10px;
   width: 60px;
 }
@@ -128,7 +131,7 @@
 .text-desc {
   font-size: 30px;
 }
-/* .btnColor {
-  background-color: hsl(45, 7%, 89%);
-  color: green;
-} */
+.btnColor {
+  background-color: green;
+  color: white;
+}
